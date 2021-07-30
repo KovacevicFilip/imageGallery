@@ -1,0 +1,72 @@
+<!-- Template for grid view START-->
+<div class="pojedinacniAlbumi">
+    <div class="gridViewP">
+    <div class="container">
+        <header>
+            <div class="topBar">
+                <span (click)="return()" class="povratak"><img src="../../../assets/image/arrow-left-solid.svg">povratak</span>
+            </div>
+            <div class="bottomBar">
+                <h1>Arandjelovac 1990. god.</h1>
+                <span class="viewGrid">
+                    <img (click)="changeGridToSquareP()" class="squareView active" src="../../../assets/image/th-large-solid.svg" alt="view grid">
+                    <img (click)="changeGridToListP()" class="listView" src="../../../assets/image/bars-solid.svg" alt="view grid">
+                </span>
+            </div>
+            <!-- searchBox START-->
+            <div class="searchBox">
+               <img src="../../../assets/image/search-solid.svg" alt="Search icon"> 
+                <input type="search" placeholder="pretraži" ng-model="find">
+            </div>
+            <!-- searchBox END-->
+        </header>
+        <section>
+            <div class="row">
+                <div class="col-4 imgBox" *ngFor="let photo of photos">
+                    <img (click)="open()" src="https://via.placeholder.com/150/771796" class="img-fluid" width="100%" alt="Responsive image"><br>
+                    <div class="imgFooter">
+                        <h2>{{photo.title}}</h2>
+                        <img (click)="delete()"class="deleteButton" src="../../../assets/image/trash-alt-regular.svg" alt="delete img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+<!-- Template for grid view ENd-->
+<!--Template for list grid view START-->
+<div class="gridListViewP">
+    <div class="container">
+        <header>
+            <div class="topBar">
+                <span (click)="return()" class="povratak"><img src="../../../assets/image/arrow-left-solid.svg">povratak</span>
+            </div>
+            <div class="bottomBar">
+                <h1>Arandjelovac 1990. god.</h1>
+                <span class="viewGrid">
+                    <img (click)="changeGridToSquareP()" class="squareView active" src="../../../assets/image/th-large-solid.svg" alt="view grid">
+                    <img (click)="changeGridToListP()" class="listView" src="../../../assets/image/bars-solid.svg" alt="view grid">
+                </span>
+            </div>
+            <!-- searchBox START-->
+            <div class="searchBox">
+               <img src="../../../assets/image/search-solid.svg" alt="Search icon"> 
+                <input type="search" placeholder="pretraži" ng-model="find">
+            </div>
+            <!-- searchBox END-->
+        </header>
+        <section>
+            <div class="row"  *ngFor="let photo of photos">
+                <div class="col-4 imgBoxList">
+                    <img (click)="open()" src="https://via.placeholder.com/150/771796" class="img-fluid" width="100%" alt="Responsive image">
+                </div>
+                <div class="col-8 imgFooterList">
+                    <span>{{photo.title}}</span><br>
+                    <img (click)="delete()"class="deleteButton" src="../../../assets/image/trash-alt-regular.svg" alt="delete img">
+                </div>                
+            </div>
+        </section>
+    </div>
+</div>
+</div>
+<!-- Template for list grid view END -->

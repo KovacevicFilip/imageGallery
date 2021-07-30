@@ -1,0 +1,78 @@
+.albumi {
+    display: block;
+}
+.gridListView {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header span {
+    margin-top: 80px;
+}
+h1 {
+    margin-top:75px;    
+    height: 76px;    
+    color: #000000;
+    font-family: "'Nunito', sans-serif";
+    font-size: 64px;
+    font-weight: 100;
+    letter-spacing: 0;
+    line-height: 78px;      
+}
+.viewGrid {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .viewGrid img {
+    padding:6px;  
+    opacity: 0.3;  
+  }
+  .viewGrid img:hover {
+      opacity: 0.8;
+      transition:0.2s all ease;
+      cursor: pointer;
+  }
+  .imgRow {
+    margin-top: 79px;
+}
+.imgBox img:hover{
+    opacity: 0.5;
+    transition:0.2s all ease;
+    cursor: pointer;
+  }
+  .deleteButton {
+    width:30px;
+    height: 30px;
+    opacity: 0.3;
+  }
+  .deleteButton:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease;
+  }
+  .fotoAlbum h2 {
+    height: 10px;
+    margin: 16px 0;
+    width: 319px;
+    display: inline-block;
+    color: #000000;    
+    font-size: 32px;
+    font-weight: 100;
+    letter-spacing: 0;
+    line-height: 39px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .fotoAlbum span {
+    display:inline-block;
+    font-family: 'Nunito', sans-serif;
+    height: 21px;
+    width: 163px;
+    color: #8A8A8A;    
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 22px;
+  }

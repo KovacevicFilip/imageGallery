@@ -1,0 +1,13 @@
+.carouselWrapper {
+    margin:0 auto;
+    width: 80vw;
+    height: 80vh;
+}
+.carousel-img {
+    position:relative;
+}
+.img-fluid {   
+    margin-top:5%;    
+    width:80vw;
+    height: 80vh;
+}

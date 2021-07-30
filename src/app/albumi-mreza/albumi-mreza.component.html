@@ -1,0 +1,56 @@
+<!-- Albumi div START-->
+<div class="albumi">
+    <!-- gridView div START-->
+    <div class="gridView">
+        <div class="container">
+            <header>
+                <h1>Foto albumi familije Marković</h1>
+                <span class="viewGrid">
+                    <img (click)="changeGridToSquare()" class="squareView" src="../../../assets/image/th-large-solid.svg" alt="view grid">
+                    <img (click)="changeGridToList()" class="listView" src="../../../assets/image/bars-solid.svg" alt="view list">
+                </span>
+            </header>
+            <section>
+                <div class="fotoAlbum">
+                    <div class="row imgRow">                    
+                            <div (click)="forward()" class="col-4 imgBox" *ngFor="let album of albums">
+                                <img src = "{{ album.thumbnailUrl }}"  class="img-fluid" alt="Responsive image" width="100%">
+                                <h2>{{ album.title }}</h2>
+                                <!--ovde bi trebalo umesto id da bude ko je kreirao, ali posto tog podatka nije bilo u JSON-u, stavio sam id -->
+                                <span>kreirao: {{ album.id}}</span>
+                            </div>                         
+                    </div>
+                </div>          
+            </section>
+        </div>
+    </div>
+    <!-- gridView div END-->
+    <!--gridListView div START-->
+    <div class="gridListView">        
+            <div class="container">
+                <header>
+                    <h1>Foto albumi familije Marković</h1>
+                    <span class="viewGrid">
+                        <img (click)="changeGridToSquare()" class="squareView" src="../../../assets/image/th-large-solid.svg" alt="view grid">
+                        <img (click)="changeGridToList()" class="listView" src="../../../assets/image/bars-solid.svg" alt="view list">
+                    </span>
+                </header>
+                <section>
+                    <div class="fotoAlbum">
+                        <div class="row imgRow" *ngFor="let album of albums">                    
+                                <div (click)="forward()" class="col-4 imgBox">
+                                    <img src = "{{ album.thumbnailUrl }}"  class="img-fluid" alt="Responsive image" width="100%">
+                                </div> 
+                                <div class="col-8">
+                                    <h2>{{ album.title }}</h2><br>
+                                    <!--ovde bi trebalo umesto id da bude ko je kreirao, ali posto tog podatka nije bilo u JSON-u, stavio sam id -->
+                                    <span>kreirao: {{ album.id}}</span>                                    
+                                </div>                                                        
+                        </div>
+                    </div>          
+                </section>
+            </div>        
+    </div>
+    <!-- gridListView END-->
+</div>
+<!--Albumi div END-->

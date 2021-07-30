@@ -1,0 +1,121 @@
+.pojedinacniAlbumi {
+  display:none;
+}
+.topBar {
+  margin-top: 30px;
+}
+.povratak {
+  cursor: pointer;
+  height: 21px;
+  width: 68px;  
+  color: #000000;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.povratak img {
+  width: 40px;
+  padding: 10px;
+  opacity: 0.3;
+}
+h1 {
+  height: 76px;
+  width: 658px;
+  color: #000000;
+  font-family: "Helvetica Neue";
+  font-size: 64px;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: 78px;
+}
+.bottomBar {
+    display:flex;
+    justify-content: space-between;
+}
+.viewGrid {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.viewGrid img {
+  padding:6px;
+  opacity: 0.3;
+}
+.viewGrid img:hover, .viewGrid:active {
+  opacity: 0.8; 
+  transition:0.2s all ease; 
+  cursor: pointer;
+}
+.imgBoxList {  
+  margin: 10px 0;
+}
+.imgBoxList img:hover {
+  opacity: 0.5;
+  transition:0.2s all ease;
+  cursor: pointer;
+}
+.imgBox img:hover {
+  opacity: 0.5;
+  transition:0.2s all ease;
+  cursor: pointer;
+}
+
+.searchBox {
+    display: flex;
+    width: 30%;
+    border-bottom:2px solid #000000;
+    margin:25px 0;
+    color: #C7C7C7;
+    font-family: "Helvetica Neue";
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 0;
+    line-height: 36px;
+}
+.searchBox img {
+  width: 30px;
+  height: 30px;
+  padding:0 5px;
+  margin-right:10px;
+}
+.searchBox input {
+    outline:none;
+    border:0;    
+}
+.deleteButton {
+  margin-top: 4px;
+  width:25px;
+  height: 25px;
+  opacity: 0.3;
+}
+.deleteButton:hover {
+  opacity: 0.8;
+  transition: 0.2s all ease;
+}
+.imgFooter {  
+  margin: 0;
+  display:flex !important;
+  justify-content:space-between !important;  
+  /* ovde sam imao problem sa pozicioniranjem delete dugmeta, koji nisam stigao da resim. parent div je dobio display flex i juctify-content:space-between, ali naredbe iz nekog razloga ne rade */
+  height: 38px;
+  width: 274px;
+  color: #000000;
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: 39px;
+}
+.imgFooterList span {
+  display: inline-block;
+  
+}
+.imgFooterList img {
+ display: inline-block;
+}
+.gridListViewP {
+  display: none;
+}
